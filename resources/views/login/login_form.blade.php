@@ -22,6 +22,10 @@
         </ul>
     </div>
 @endif
+    <x-alert type="danger" :session="session('login_error')"/>
+
+    <x-alert type="danger" :session="session('logout')"/>
+
   <input type="email" id="inputEmail" name='email' class="form-control" placeholder="Email address" required autofocus>
   <input type="password" id="inputPassword" name='password' class="form-control" placeholder="Password" required>
   <button class="btn btn-lg btn-primary btn-block" type="submit">ログイン</button>
